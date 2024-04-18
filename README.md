@@ -30,7 +30,7 @@ Examples:
 			}
 		```
 		- Screenshot:
-			- ![Alt text](/Screenshots/Numbers.PNG?raw=true "Optional Title")
+			- ![Alt text](./Screenshots/Numbers.PNG?raw=true "Optional Title")
 	- Structs:
 		- ```rust
 			use sorting_lib_zholaman::sorts::quick_sort::quick_sort;
@@ -71,7 +71,7 @@ Examples:
 			}
 		```
 		- Screenshot:
-			- ![Alt text](/Screenshots/Struct.PNG?raw=true "Optional Title")
+			- ![Alt text](./Screenshots/Struct.PNG?raw=true "Optional Title")
 
 ```toml
 [dependencies]
