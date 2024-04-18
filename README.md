@@ -19,8 +19,9 @@ use sorting_lib_zholaman::sorts::selection_sort::selection_sort;
 Examples:
 ```
 
-	- Numbers: 
-		- ```rust
+	Numbers: 
+ 
+		```rust
 			use sorting_lib_zholaman::sorts::quick_sort::quick_sort;
 
 			fn main() {
@@ -29,10 +30,12 @@ Examples:
 				println!("{:?}", numbers);
 			}
 		```
-		- Screenshot:
+  
+		Screenshot:
 			- ![Alt text](/../main/Screenshots/Numbers.PNG?raw=true "Optional Title")
-	- Structs:
-		- ```rust
+	Structs:
+ 
+		```rust
 			use sorting_lib_zholaman::sorts::quick_sort::quick_sort;
 
 			#[derive(Clone)]
@@ -70,7 +73,8 @@ Examples:
 
 			}
 		```
-		- Screenshot:
+  
+		Screenshot:
 			- ![Alt text](/../main/Screenshots/Struct.PNG?raw=true "Optional Title")
 
 ```toml
