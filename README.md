@@ -19,63 +19,64 @@ use sorting_lib_zholaman::sorts::selection_sort::selection_sort;
 Examples:
 ```
 
-	Numbers: 
+Numbers: 
  
-		```rust
-			use sorting_lib_zholaman::sorts::quick_sort::quick_sort;
+```rust
+	use sorting_lib_zholaman::sorts::quick_sort::quick_sort;
 
-			fn main() {
-				let mut numbers = vec![10, 3, 15, 6, 2];
-				quick_sort(&mut numbers);
-				println!("{:?}", numbers);
-			}
-		```
+	fn main() {
+		let mut numbers = vec![10, 3, 15, 6, 2];
+		quick_sort(&mut numbers);
+		println!("{:?}", numbers);
+	}
+```
   
-		Screenshot:
-			- ![Alt text](/../main/Screenshots/Numbers.PNG?raw=true "Optional Title")
-	Structs:
+Screenshot:
+
+- ![Alt text](/../main/Screenshots/Numbers.PNG?raw=true "Optional Title")
+
+ Structs:
  
-		```rust
-			use sorting_lib_zholaman::sorts::quick_sort::quick_sort;
+```rust
+	use sorting_lib_zholaman::sorts::quick_sort::quick_sort;
 
-			#[derive(Clone)]
-			struct Employee {
-				id: u32,
-				name: String,
-			}
+	#[derive(Clone)]
+	struct Employee {
+		id: u32,
+		name: String,
+	}
 
-			impl PartialOrd for Employee {
-				fn partial_cmp(&self, other: &Self) -> Option<std::cmp::Ordering> {
-					self.id.partial_cmp(&other.id)
-				}
-			}
+	impl PartialOrd for Employee {
+		fn partial_cmp(&self, other: &Self) -> Option<std::cmp::Ordering> {
+			self.id.partial_cmp(&other.id)
+		}
+	}
 
-			impl PartialEq for Employee {
-				fn eq(&self, other: &Self) -> bool {
-					self.id == other.id
-				}
-			}
+	impl PartialEq for Employee {
+		fn eq(&self, other: &Self) -> bool {
+			self.id == other.id
+		}
+	}
 
-			fn main() {
-				let mut employees_quick = vec![
-					Employee { id: 2, name: "Alice".to_string() },
-					Employee { id: 4, name: "Bob".to_string() },
-					Employee { id: 1, name: "Eve".to_string() },
-					Employee { id: 3, name: "Charlie".to_string() },
-				];
-				let mut employees_merge = employees_quick.clone();
+	fn main() {
+		let mut employees_quick = vec![
+			Employee { id: 2, name: "Alice".to_string() },
+			Employee { id: 4, name: "Bob".to_string() },
+			Employee { id: 1, name: "Eve".to_string() },
+			Employee { id: 3, name: "Charlie".to_string() },
+		];
 
-				merge_sort(&mut employees_merge);
-				println!("Merge Sorted employees by id:");
-				for emp in &employees_merge {
-					println!("{}: {}", emp.id, emp.name);
-				}
+		let mut employees_merge = employees_quick.clone();
+		merge_sort(&mut employees_merge);
+		println!("Merge Sorted employees by id:");
+		for emp in &employees_merge {
+			println!("{}: {}", emp.id, emp.name);
+		}
+	}
+```
 
-			}
-		```
-  
-		Screenshot:
-			- ![Alt text](/../main/Screenshots/Struct.PNG?raw=true "Optional Title")
+Screenshot:
+- ![Alt text](/../main/Screenshots/Struct.PNG?raw=true "Optional Title")
 
 ```toml
 [dependencies]
