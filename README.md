@@ -76,7 +76,7 @@ Screenshot:
 ```
 
 Screenshot:
-- ![Alt text](/../main/Screenshots/Struct.PNG?raw=true "Optional Title")
+- ![Alt text](/../main/Screenshots/Structs.PNG?raw=true "Optional Title")
 
 ```toml
 [dependencies]
